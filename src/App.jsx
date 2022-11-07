@@ -89,13 +89,13 @@ const App = () => {
       <div className="wrapper">
             <header className="header">
                   <div className="header__container">
-                     <a href="#" className="header__logo">Project Store</a>
-                     <div className="header__cart cart-header" >
+                     <a href="" className="header__logo">Project Store</a>
+                     <div className="header__cart cart-header" onClick={() => onOpenCart(true)} >
                         <div className="cart__icon">
                               <i className="bi bi-cart3"></i>
                         </div>
                         <div>{totalCount}</div>
-                        <div className="cart__button" onClick={() => onOpenCart(true)}>CART</div>
+                        <div className="cart__button">CART</div>
                      </div>
                   </div>
                </header>

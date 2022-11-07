@@ -98,7 +98,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 .value-range-container {
   display: flex;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: 14px;
 } 
 .value-range{
   font-weight: 500;

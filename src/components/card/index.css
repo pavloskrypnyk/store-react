@@ -15,7 +15,7 @@
   height: 200px;
   justify-content: center;
   margin: 12px 12px 0;
-  padding: 1rem;
+
 }
 .card-item__rating-pice-content {
   display: flex;
@@ -34,12 +34,12 @@
   border-radius: 5px;
   padding: 0.5rem;
   width: 70px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
 }
 
 .price__content {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   display: flex;
   padding: 0.5rem;
@@ -52,7 +52,7 @@
 }
 .card-item__title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   padding: 1rem 1rem 0 1rem;
 }
 .card-item__description {

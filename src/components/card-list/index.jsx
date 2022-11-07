@@ -1,6 +1,8 @@
 import Card from '../card';
 import CardSkeleton from '../card/skeleton';
 
+import './index.css';
+
 const CardList = ({products, isLoadCard, cart, onAddCart}) => {
     
     return (

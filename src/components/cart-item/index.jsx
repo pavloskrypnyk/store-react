@@ -1,5 +1,7 @@
-import { useDispatch } from "react-redux"
-import { addProductToCart, minusCount, removeProductFromCart, totalPriceCart } from "../../redux/slices/cart-slice"
+import { useDispatch } from "react-redux";
+
+import { addProductToCart, minusCount, removeProductFromCart } from "../../redux/slices/cart-slice";
+import './index.css';
 
 const CartItem = ({id, title, price, images, count}) => {
   const dispatch = useDispatch()  

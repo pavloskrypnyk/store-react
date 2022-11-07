@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import CartItem from "../cart-item";
+import './index.css';
 
 const CartList = ({onOpenCart}) => {
     const products = useSelector(state => state.cart.cart)
@@ -20,9 +21,9 @@ const CartList = ({onOpenCart}) => {
                     
                     <div className="cart__total-oreder">
                         <div className="total-order__container">
-                        <div className="total-order__title">Total:</div>
-                        <div className="tottal-order__total-price">{totalPrice}</div>
-                        <div className="total-order__valute">UAH</div>
+                            <div className="total-order__title">Total:</div>
+                            <div className="tottal-order__total-price">{totalPrice}</div>
+                            <div className="total-order__valute">UAH</div>
                         </div>
                     </div>
                     <div className="cart__order-button">

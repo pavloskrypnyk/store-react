@@ -12,7 +12,7 @@ export const productsAPI = createApi({
                 
             }),
             transformResponse(products, meta) {
-                return { products,  totalPages: Math.ceil(Number(meta.response.headers.get('X-Total-Count')) / 9) }
+                return { products, totalPages: Math.ceil(Number(meta.response.headers.get('X-Total-Count')) / 9) }
               }
         }),     
         fetchAllCategory: build.query({

@@ -32,10 +32,10 @@ const Card = ({product}) => {
                 </div>
             </div>
             <div className="card-item__title">
-                <div>{title}</div> 
+                {title}
             </div>
             <div className="card-item__description">
-                <div>{category}</div>
+                {category}
             </div>
             <div className="card-item__button" onClick={()=>onClickAddProduct()}>
                 <div>ADD TO CART</div>
