@@ -1,6 +1,7 @@
 .pagination__container {
-    
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .pagination__list {
     display: flex;
@@ -18,7 +19,6 @@
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    margin: 0;
     justify-content: center;
 }
 .pagination__item:hover {

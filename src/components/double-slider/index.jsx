@@ -14,7 +14,8 @@ const DoubleSlider = ({
     loadGap,
     valute,
     min,
-    max
+    max,
+    setPageCount
     }) => {
     const [valueMin, setValueMin] = useState(loadMin);
     const [valueMax, setValueMax] = useState(loadMax);
@@ -28,12 +29,14 @@ const DoubleSlider = ({
     const updatePriceMin = useCallback(
         debounce((value) => {
                 dispatch(dispatchValueMin(value));
+                dispatch(setPageCount(1))
             }, 500), 
         []);
     
     const updatePriceMax = useCallback(
         debounce((value) => {
                 dispatch(dispatchValueMax(value));
+                dispatch(setPageCount(1))
         }, 500), 
         []);
 
@@ -44,7 +47,8 @@ const DoubleSlider = ({
             updatePriceMin(newValue);
         } else {
             setValueMin(value);
-            updatePriceMin(value);  
+            updatePriceMin(value); 
+            dispatch(setPageCount(1)) 
         }  
     };
     const handleChangePriceMax = (value) => {

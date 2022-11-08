@@ -101,9 +101,9 @@ const App = () => {
                </header>
             <main className="page">
                   <div className="page__container">
-                  <section className="page__side-left side-left">
+                  <section>
                      {/* Side-left components */}
-                     <div className="side-left__container">
+                     <div className="side-left">
                         <div className="side-left__filters filters-side-left">
                            <div className="filters-side-left__slider slider-filters-side-left">
                               {/* Price-slider */}
@@ -117,6 +117,7 @@ const App = () => {
                               max={85000}
                               loadGap={10000}
                               valute={'UAH'}
+                              setPageCount={setPageCount}
                               />
                            </div>
                            <div className="side-left-filters__decorative-block"></div>
@@ -155,6 +156,7 @@ const App = () => {
                               loadGap={1}
                               dispatchValueMin={setRatingMin}
                               dispatchValueMax={setRatingMax}
+                              setPageCount={setPageCount}
                               />
                            </div>
                         </div>
@@ -166,7 +168,6 @@ const App = () => {
                   </section>
                   <section className="page__side-right side-right">
                      {/* Side-right components */}
-                     <div className="side-right__container">
                         <div className="side-right__search-box search-box-side-right">
                            {/* Search-box component */}
                            <SearchBox 
@@ -177,14 +178,11 @@ const App = () => {
                         <div className="side-right__card-list">
                            {/* Card-list component */}
                            <CardList products={products} isLoadCard={isLoading} />
-                        </div>                  
-                     </div>
-                     <footer className="footer">
+                        </div>
                            <div className="footer__pagination">
                               {/* Pagination component */}
                               <Pagination onPageItemClick={onPageItemClick} totalPages={totalPages} curentPage={curentPage} />
                            </div>
-                        </footer>
                   </section> 
                            
                </div>
